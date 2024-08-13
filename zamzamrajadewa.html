@@ -103,26 +103,6 @@
         .social-media a:hover {
             color: #fff;
         }
-
-        .music-controls {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .music-controls button {
-            padding: 10px 20px;
-            background-color: #ffd700;
-            border: none;
-            color: #000;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .music-controls button:hover {
-            background-color: #fff;
-        }
     </style>
 </head>
 
@@ -170,15 +150,10 @@
                 <li><a href="javascript:void(0);" onclick="openLink('https://github.com/zamsyntax')">GitHub</a></li>
             </ul>
         </div>
-
-        <!-- Tambahkan kontrol musik -->
-        <div class="music-controls">
-            <button onclick="toggleMusic()">Play/Pause Musik</button>
-        </div>
     </div>
 
-    <!-- Audio untuk musik latar belakang -->
-    <audio id="background-music" src="lagu1.mp3" loop></audio>
+    <!-- Memastikan tag <audio> tidak bersarang dan menggunakan elemen audio yang benar -->
+    <audio id="background-music" src="lagu1.mp3" autoplay loop></audio>
 
     <script src="script.js"></script>
 </body>
